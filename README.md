@@ -4,5 +4,5 @@
 
 About my experience, education, projects & contact info. 
 
-* Visit my website: https://github.com/DJN2122
+* Visit my website: https://djn2122.github.io/Portfolio/
 
