@@ -75,6 +75,13 @@ section{
     color:#fff;
 }
 
+.sub-heading{
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem;
+    color: #fff;
+}
+
 .heading span{
     color:var(--yellow);
 }
