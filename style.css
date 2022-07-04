@@ -377,6 +377,69 @@ header .navbar ul li a:hover{
     display: none;
 }
 
+.project-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-card{
+    background:#222;
+    width: 26rem;
+    margin: 2rem;
+    border-radius: 1rem;
+}
+
+.card-image{
+    height: 20rem;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.car-1 {
+    background-image: url('./images/NYC.jpeg');
+}
+
+.car-2 {
+    background-image: url('./images/NYC.jpeg');
+}
+
+.car-3 {
+    background-image: url('./images/NYC.jpeg');
+}
+
+.project-card h2{
+    padding: 10px;
+    color:#eee;
+}
+
+.project-card p{
+    padding: 10px;
+    color:#eee;
+}
+
+.card-btn{
+    justify-content: center;
+    width: 15rem;
+    padding: 1rem;
+    color:black;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 2rem; 
+    margin: 2rem 5.5rem;
+}
+
+.card-btn:hover{
+    background:var(--yellow);
+}
+
+.project-card:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 1s ease;
+}
 
 
 /* media queries  */
