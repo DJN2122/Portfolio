@@ -392,29 +392,31 @@ header .navbar ul li a:hover{
 
 .card-image{
     height: 20rem;
-    margin-bottom: 15px;
+    background-position: center center;
     background-size: cover;
     border-radius: 1rem 1rem 0 0;
 }
 
 .car-1 {
-    background-image: url('./images/NYC.jpeg');
+    background-image: url('./images/soundwave.jpeg');
 }
 
 .car-2 {
-    background-image: url('./images/NYC.jpeg');
+    background-image: url('./images/django1.jpeg');
 }
 
 .car-3 {
-    background-image: url('./images/NYC.jpeg');
+    background-image: url('./images/algorithms.jpeg');
 }
 
 .project-card h2{
+    text-align: center;
     padding: 10px;
     color:#eee;
 }
 
 .project-card p{
+    text-align: center;
     padding: 10px;
     color:#eee;
 }
