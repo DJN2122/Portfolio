@@ -410,13 +410,15 @@ header .navbar ul li a:hover{
 }
 
 .project-card h2{
+    font-size: 1.75rem;
     text-align: center;
     padding: 10px;
     color:#eee;
 }
 
 .project-card p{
-    text-align: center;
+    font-size: 1.4rem;
+    text-align: left;
     padding: 10px;
     color:#eee;
 }
@@ -424,11 +426,11 @@ header .navbar ul li a:hover{
 .card-btn{
     justify-content: center;
     width: 15rem;
-    padding: 1rem;
+    padding: 0.75rem;
     color:black;
     cursor: pointer;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.5rem;
     border-radius: 2rem; 
     margin: 2rem 5.5rem;
 }
