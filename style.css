@@ -445,6 +445,21 @@ header .navbar ul li a:hover{
     transition: all 1s ease;
 }
 
+.gotopbtn{
+    position: fixed;
+    width: 5rem;
+    height: 5rem;
+    background: #f9e424;
+    bottom: 2rem;
+    right: 2rem;
+
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+}
 
 /* media queries  */
 
