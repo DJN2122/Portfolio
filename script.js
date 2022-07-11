@@ -36,3 +36,14 @@ $(document).ready(function(){
     });
   
   });
+
+// scroll top button 
+const toTop = document.querySelector(".gotopbtn");
+
+window.addEventListener("scroll" , () => {
+  if (window.pageYOffset > 300) {
+    toTop.classList.add("active");
+  } else {
+    toTop.classList.remove("active");
+  }
+})

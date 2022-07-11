@@ -454,10 +454,26 @@ header .navbar ul li a:hover{
     right: 2rem;
     text-decoration: none;
     text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
     line-height: 5rem;
     color: white;
     font-size: 2rem;
     border-radius: 2rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+.gotopbtn:hover{
+    background: #333;
+}
+
+.gotopbtn.active{
+    bottom: 2rem;
+    pointer-events: auto;
+    opacity: 1;
 }
 
 /* media queries  */
