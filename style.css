@@ -64,6 +64,7 @@ section{
 
 .btn:hover{
     background:var(--yellow);
+    color: #333;
 }
 
 .heading{
@@ -141,6 +142,7 @@ header .navbar ul li a{
 
 header .navbar ul li a:hover{
     background:var(--yellow);
+    color: #333;
 }
 
 #menu{
@@ -279,7 +281,7 @@ header .navbar ul li a:hover{
     line-height: 5rem;
     text-align: center;
     font-size: 2rem;
-    color:#fff;
+    color:#333;
     background:var(--yellow);
 }
 
@@ -458,7 +460,7 @@ header .navbar ul li a:hover{
     display: flex;
     justify-content: center;
     line-height: 5rem;
-    color: white;
+    color: #333;
     font-size: 2rem;
     border-radius: 2rem;
     opacity: 0;
