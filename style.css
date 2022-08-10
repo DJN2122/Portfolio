@@ -470,6 +470,7 @@ header .navbar ul li a:hover{
 
 .gotopbtn:hover{
     background: #333;
+    color:#fff;
 }
 
 .gotopbtn.active{
