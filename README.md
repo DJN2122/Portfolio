@@ -4,5 +4,5 @@
 
 About my experience, education, projects, CV & contact info. 
 
-* Visit my website: https://djn2122.github.io/Portfolio/
+* Visit my website: https://davidniculita.com/
 
