@@ -4,5 +4,5 @@
 
 About my experience, education, projects, CV & contact info. 
 
-* Visit my website: https://davidniculita.com/
+* Visit my website: https://davidniculita.com
 
