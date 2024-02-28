@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
 
 :root{
-    --yellow:#f9e424;
+    --neonblue:#1F51FF;
 }
 
 *{
@@ -15,7 +15,7 @@
 }
 
 *::selection{
-    background:var(--yellow);
+    background:var(--neonblue);
     color:#333;
 }
 
@@ -33,7 +33,7 @@ html::-webkit-scrollbar-track{
 }
 
 html::-webkit-scrollbar-thumb{
-    background:var(--yellow);
+    background:var(--neonblue);
 }
 
 body{
@@ -63,7 +63,7 @@ section{
 }
 
 .btn:hover{
-    background:var(--yellow);
+    background:var(--neonblue);
     color: #333;
 }
 
@@ -84,7 +84,7 @@ section{
 }
 
 .heading span{
-    color:var(--yellow);
+    color:var(--neonblue);
 }
 
 header{
@@ -107,7 +107,7 @@ header .user img{
     border-radius: 100%;
     object-fit: cover;
     margin-bottom: 1rem;
-    border:.7rem solid var(--yellow);
+    border:.7rem solid var(--neonblue);
 }
 
 header .user .name{
@@ -141,7 +141,7 @@ header .navbar ul li a{
 }
 
 header .navbar ul li a:hover{
-    background:var(--yellow);
+    background:var(--neonblue);
     color: #333;
 }
 
@@ -175,7 +175,7 @@ header .navbar ul li a:hover{
 }
 
 .welcome h1 span{
-    color:var(--yellow);
+    color:var(--neonblue);
 }
 
 .welcome p{
@@ -200,7 +200,7 @@ header .navbar ul li a:hover{
 
 .about .row .info h3{
     font-size: 2rem;
-    color:var(--yellow);
+    color:var(--neonblue);
     padding:1rem 0;
     font-weight: normal;
 }
@@ -227,7 +227,7 @@ header .navbar ul li a:hover{
 
 .about .row .counter .box span{
     font-size: 4rem;
-    color:var(--yellow);
+    color:var(--neonblue);
 }
 
 .about .row .counter .box h3{
@@ -282,7 +282,7 @@ header .navbar ul li a:hover{
     text-align: center;
     font-size: 2rem;
     color:#333;
-    background:var(--yellow);
+    background:var(--neonblue);
 }
 
 .portfolio .box-container{
@@ -369,7 +369,7 @@ header .navbar ul li a:hover{
 
 .contact .row .content .info h3 i{
     padding-right: 1rem;
-    color:var(--yellow);
+    color:var(--neonblue);
 }
 
 .top{
@@ -442,7 +442,7 @@ header .navbar ul li a:hover{
 }
 
 .card-btn:hover{
-    background:var(--yellow);
+    background:var(--neonblue);
 }
 
 .project-card:hover{
@@ -455,7 +455,7 @@ header .navbar ul li a:hover{
     position: fixed;
     width: 5rem;
     height: 5rem;
-    background: #f9e424;
+    background: #1F51FF;
     bottom: 2rem;
     right: 2rem;
     text-decoration: none;
