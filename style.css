@@ -417,10 +417,18 @@ header .navbar ul li a:hover{
 
 .car-5 {
     background-image: url('./images/livediary.jpeg.png');
+    height: 200px; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 .car-6 {
     background-image: url('./images/MedAssist-logo-poppins.png');
+    height: 200px; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 
