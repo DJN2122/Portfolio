@@ -425,11 +425,12 @@ header .navbar ul li a:hover{
 
 .car-6 {
     background-image: url('./images/MedAssist-logo-poppins.png');
-    height: 200px; 
+    height: 200px;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center; /* explicitly set horizontal and vertical centering */
     background-size: contain;
 }
+
 
 
 .project-card h2{
