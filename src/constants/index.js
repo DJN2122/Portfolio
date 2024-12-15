@@ -135,8 +135,8 @@ const experiences = [
 const projects = [
   {
     id: 'project-1',
-    name: 'Music Visualiser with Java',
-    description: 'This project creates five responsive audio visuals in Java, reacting to music elements like bass levels.',
+    name: 'OOP with Java',
+    description: 'This project creates five responsive audio visuals in Java, leveraging Object-Oriented Programming principles to structure the visuals interaction with music elements such as bass levels, rhythm, and treble.',
     tags: [
       {
         name: 'react',
@@ -180,7 +180,7 @@ const projects = [
   },
   {
     id: 'project-3',
-    name: 'Pygame Space Invader',
+    name: 'Pygame',
     description: 'This project is a retro-style "Space Invader" game created in Python using the Pygame module, where a spaceship destroys enemies to progress.',
     tags: [
       {
@@ -224,7 +224,7 @@ const projects = [
   },
   {
     id: 'project-5',
-    name: 'Auto Detailing Services',
+    name: 'ADS',
     description:
       'This project was built by me, ensuring a fast, secure, and responsive website. I also implemented a user-friendly booking system, allowing clients to easily schedule their car detailing services online.',
     tags: [

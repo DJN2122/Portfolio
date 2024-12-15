@@ -116,7 +116,7 @@ const Experience = () => {
                   .querySelector('.download-btn')
                   .setAttribute('src', download);
               }}>
-              View My CV
+              CV
               <img
                 src={download}
                 alt="download"
