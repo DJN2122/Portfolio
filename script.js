@@ -105,3 +105,42 @@ for (var i = 0; i < microDots.length; i++) {
 setInterval(function () {
     showMicroSlide(++microIndex);
 }, 4000);
+
+// About Section Carousel
+var aboutIndex = 0;
+var aboutSlides = document.getElementsByClassName('about-slide');
+var aboutDots = document.getElementsByClassName('about-dot');
+
+function showAboutSlide(n) {
+    if (aboutSlides.length === 0) return;
+    if (n >= aboutSlides.length) aboutIndex = 0;
+    if (n < 0) aboutIndex = aboutSlides.length - 1;
+    for (var i = 0; i < aboutSlides.length; i++) {
+        aboutSlides[i].classList.remove('active-about');
+    }
+    for (var i = 0; i < aboutDots.length; i++) {
+        aboutDots[i].classList.remove('active');
+    }
+    aboutSlides[aboutIndex].classList.add('active-about');
+    if (aboutDots[aboutIndex]) aboutDots[aboutIndex].classList.add('active');
+}
+
+showAboutSlide(aboutIndex);
+
+document.querySelector('.about-next-btn') && document.querySelector('.about-next-btn').addEventListener('click', function () {
+    showAboutSlide(++aboutIndex);
+});
+
+document.querySelector('.about-prev-btn') && document.querySelector('.about-prev-btn').addEventListener('click', function () {
+    showAboutSlide(--aboutIndex);
+});
+
+for (var i = 0; i < aboutDots.length; i++) {
+    aboutDots[i].addEventListener('click', (function (idx) {
+        return function () { showAboutSlide(aboutIndex = idx); };
+    })(i));
+}
+
+setInterval(function () {
+    showAboutSlide(++aboutIndex);
+}, 4000);
