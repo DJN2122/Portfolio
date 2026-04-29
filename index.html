@@ -1,13 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/djn.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>DJN</title>
-  </head>
-  <body class="bg-night">
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Niculita - ServiceNow Developer</title>
+
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header>
+
+    <div class="user">
+        <img src="./images/menew.jpeg" alt="David Niculita">
+        <h3 class="name">David Niculita</h3>
+        <p class="post">ServiceNow Developer</p>
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#welcome"><i class="fas fa-home nav-icon"></i>Welcome</a></li>
+            <li><a href="#about"><i class="fas fa-user nav-icon"></i>About</a></li>
+            <li><a href="#education"><i class="fas fa-road nav-icon"></i>Journey</a></li>
+            <li><a href="#certifications"><i class="fas fa-certificate nav-icon"></i>Certifications</a></li>
+            <li><a href="#portfolio"><i class="fas fa-briefcase nav-icon"></i>Portfolio</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope nav-icon"></i>Contact</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<div id="menu" class="fas fa-bars"></div>
+
+<!-- Welcome -->
+<section class="welcome" id="welcome">
+
+    <p class="welcome-eyebrow">Hello, I'm</p>
+    <h1>David <span>Niculita</span></h1>
+    <p class="welcome-role">ServiceNow Developer - Dublin, Ireland</p>
+    <p class="welcome-body">Building modern, scalable ServiceNow solutions focused on clean workflows, process automation, and real business value.</p>
+    <p class="welcome-body">Outside of work, I enjoy travelling - having visited the USA, UAE, Romania, Spain, Italy, Slovenia, and Germany - and staying active through tennis, padel, and fitness.</p>
+    <div class="welcome-actions">
+        <a href="#about"><button class="btn">About Me <i class="fas fa-user"></i></button></a>
+        <a href="#certifications"><button class="btn btn-outline">Certifications <i class="fas fa-certificate"></i></button></a>
+    </div>
+
+</section>
+
+<!-- About -->
+<section class="about" id="about">
+
+    <h1 class="heading"><span>About</span> Me</h1>
+
+    <div class="about-description">
+        <p>I take a collaborative, detail-oriented approach - working closely with teams to understand requirements and deliver solutions that are practical, maintainable, and built to scale.</p>
+    </div>
+
+    <div class="row">
+
+        <div class="info">
+            <h3><span>Name:</span> David Niculita</h3>
+            <h3><span>Role:</span> ServiceNow Developer</h3>
+            <h3><span>Background:</span> BSc Computer Science</h3>
+            <h3><span>Modules:</span> ITSM &middot; ITAM &middot; ITOM &middot; CSM &middot; ESC &middot; CMDB &middot; ATF</h3>
+            <h3><span>Languages:</span> English, Romanian, German</h3>
+            <h3><span>Location:</span> Dublin, Ireland</h3>
+            <a href="https://drive.google.com/file/d/1yhXHkt61Ulw04ib2wH-CjX1DfAnkg_7e/view?usp=sharing" target="_blank">
+                <button class="btn">View CV <i class="fab fa-google-drive"></i></button>
+            </a>
+        </div>
+
+        <div class="counter">
+
+            <div class="box">
+                <span>Current Role</span>
+                <h3>ServiceNow Developer at Ergo<br><br>Full platform lifecycle - from development and testing through update set migration to production.</h3>
+            </div>
+
+            <div class="box">
+                <span>Projects</span>
+                <h3>ServiceNow Solutions<br><br>ATF suites, branded email templates, catalog items, widgets, and onboarding playbooks.</h3>
+            </div>
+
+            <div class="box">
+                <span>Hobbies</span>
+                <h3>Tennis &middot; Padel &middot; Travelling &middot; Fitness<br><br>I enjoy building personal projects and exploring new technologies in my spare time.</h3>
+            </div>
+
+            <div class="box">
+                <span>Strengths</span>
+                <h3>Problem Solving<br>Automation Mindset<br>Attention to Detail<br>Continuous Learning</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Journey -->
+<section class="education" id="education">
+
+    <h1 class="heading">My <span>Journey</span></h1>
+
+    <div class="timeline">
+
+        <div class="tl-item">
+            <div class="tl-dot"><i class="fas fa-graduation-cap"></i></div>
+            <div class="tl-body">
+                <span class="tl-year">2013 - 2018</span>
+                <h3>Leaving Certificate</h3>
+                <p class="tl-org">Castleknock Community College</p>
+                <p class="tl-desc">Class representative and student mentor. Member of the school football team. Studied LCVP and Romanian.</p>
+            </div>
+        </div>
+
+        <div class="tl-item">
+            <div class="tl-dot"><i class="fas fa-graduation-cap"></i></div>
+            <div class="tl-body">
+                <span class="tl-year">2020 - 2024</span>
+                <h3>BSc Computer Science</h3>
+                <p class="tl-org">Technological University Dublin</p>
+                <p class="tl-desc">Software development, databases, networking, and web technologies. Completed multiple academic and personal projects.</p>
+            </div>
+        </div>
+
+        <div class="tl-item">
+            <div class="tl-dot"><i class="fas fa-laptop-code"></i></div>
+            <div class="tl-body">
+                <span class="tl-year">2024 - 2025</span>
+                <h3>IT Engineer</h3>
+                <p class="tl-org">Ergo</p>
+                <p class="tl-desc">Multi-site IT support, ServiceNow ticketing, and client troubleshooting. Progressed into ServiceNow development covering ITSM, CSM, ATF, and platform customisation.</p>
+            </div>
+        </div>
+
+        <div class="tl-item">
+            <div class="tl-dot"><i class="fas fa-cog"></i></div>
+            <div class="tl-body">
+                <span class="tl-year">2025 - Present</span>
+                <h3>ServiceNow Developer</h3>
+                <p class="tl-org">Ergo</p>
+                <p class="tl-desc">Workflows, ATF suites, branded email templates, and onboarding playbooks. Working across ITSM, CSM, Flow Designer, integrations, and update set migration through dev, preprod, and prod.</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Certifications -->
+<section class="certifications" id="certifications">
+
+    <h1 class="heading">My <span>Certifications</span></h1>
+    <p class="sub-heading">Certified across the ServiceNow platform</p>
+
+    <div class="cert-featured-wrapper">
+        <div class="cert-card cert-featured">
+            <div class="cert-badge-icon cert-badge-lg">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+            <div class="cert-label">Primary Certification</div>
+            <h2 class="cert-title">Certified System Administrator</h2>
+            <p class="cert-platform">ServiceNow &nbsp;&bull;&nbsp; CSA</p>
+            <div class="cert-date"><i class="fas fa-calendar-check"></i>&nbsp; Issued: April 2026</div>
+        </div>
+    </div>
+
+    <h3 class="cert-section-label">Micro-Certifications</h3>
+
+    <div class="cert-grid">
+
+        <div class="cert-card micro">
+            <div class="cert-badge-icon"><i class="fas fa-book-open"></i></div>
+            <h3 class="cert-name">Playbooks Essentials</h3>
+            <div class="cert-date"><i class="fas fa-calendar-alt"></i>&nbsp; April 2026</div>
+        </div>
+
+        <div class="cert-card micro">
+            <div class="cert-badge-icon"><i class="fas fa-plug"></i></div>
+            <h3 class="cert-name">Integration Hub</h3>
+            <div class="cert-date"><i class="fas fa-calendar-alt"></i>&nbsp; April 2026</div>
+        </div>
+
+        <div class="cert-card micro">
+            <div class="cert-badge-icon"><i class="fas fa-th-large"></i></div>
+            <h3 class="cert-name">Service Portal</h3>
+            <div class="cert-date"><i class="fas fa-calendar-alt"></i>&nbsp; February 2026</div>
+        </div>
+
+        <div class="cert-card micro">
+            <div class="cert-badge-icon"><i class="fas fa-project-diagram"></i></div>
+            <h3 class="cert-name">Flow Designer</h3>
+            <div class="cert-date"><i class="fas fa-calendar-alt"></i>&nbsp; January 2026</div>
+        </div>
+
+        <div class="cert-card micro">
+            <div class="cert-badge-icon"><i class="fas fa-paint-brush"></i></div>
+            <h3 class="cert-name">UI Builder</h3>
+            <div class="cert-date"><i class="fas fa-calendar-alt"></i>&nbsp; December 2025</div>
+        </div>
+
+        <div class="cert-card micro">
+            <div class="cert-badge-icon"><i class="fas fa-vial"></i></div>
+            <h3 class="cert-name">Automated Test Framework</h3>
+            <div class="cert-date"><i class="fas fa-calendar-alt"></i>&nbsp; December 2025</div>
+        </div>
+
+        <div class="cert-card micro">
+            <div class="cert-badge-icon"><i class="fas fa-star"></i></div>
+            <h3 class="cert-name">Welcome to ServiceNow</h3>
+            <div class="cert-date"><i class="fas fa-calendar-alt"></i>&nbsp; September 2025</div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Portfolio -->
+<section class="portfolio" id="portfolio">
+
+    <h1 class="heading">My <span>Portfolio</span></h1>
+    <p class="sub-heading">Personal projects built in my own time - not part of my day-to-day work</p>
+
+    <div class="project-container">
+
+        <div class="project-card">
+            <div class="card-image car-1"></div>
+            <h2>Music Visualiser with Java</h2>
+            <p>Creates 5 audio visuals using Java, Java Processing, and PApplet. Visuals respond in real time to the music - including bass, frequency, and amplitude.</p>
+            <a href="https://github.com/DJN2122/OOP-2021-22-Assignment" target="_blank"><button class="card-btn">GitHub Repo <i class="fab fa-github"></i></button></a>
+        </div>
+
+        <div class="project-card">
+            <div class="card-image car-2"></div>
+            <h2>ADS Detailing</h2>
+            <p>Professional vehicle detailing service website covering paint care, valet services, and protection packages.<br><br><a href="https://www.adsdetailing.ie/" target="_blank" style="color:#62D84E;">adsdetailing.ie</a></p>
+            <a href="https://github.com/DJN2122?tab=repositories" target="_blank"><button class="card-btn">GitHub Repo <i class="fab fa-github"></i></button></a>
+        </div>
+
+        <div class="project-card">
+            <div class="card-image car-3"></div>
+            <h2>TintFX</h2>
+            <p>Window tinting, vehicle branding, and protective film services for personal and commercial clients.<br><br><a href="https://www.tintfx.ie/" target="_blank" style="color:#62D84E;">tintfx.ie</a></p>
+            <a href="https://github.com/DJN2122/tintfx-website" target="_blank"><button class="card-btn">GitHub Repo <i class="fab fa-github"></i></button></a>
+        </div>
+
+        <div class="project-card">
+            <div class="card-image car-4"></div>
+            <h2>Pygame Space Invader</h2>
+            <p>Retro-style Space Invader game built with Python and Pygame - a spaceship must destroy incoming enemy ships to progress through levels.</p>
+            <a href="https://github.com/DJN2122/Pygame-Space-Invader" target="_blank"><button class="card-btn">GitHub Repo <i class="fab fa-github"></i></button></a>
+        </div>
+
+        <div class="project-card">
+            <div class="card-image car-5"></div>
+            <h2>MedAssist</h2>
+            <p>AI-powered medical assistant built with Blazor WebAssembly using OpenAI, Azure Speech, and Google Places for guidance, voice interaction, and healthcare info.<br><br><a href="https://www.youtube.com/watch?v=P1lMoJYcKAQ" target="_blank" style="color:#62D84E;">Watch Demo</a></p>
+            <a href="https://github.com/DJN2122/MedAssistPWA" target="_blank"><button class="card-btn">GitHub Repo <i class="fab fa-github"></i></button></a>
+        </div>
+
+        <div class="project-card">
+            <div class="card-image car-6"></div>
+            <h2>Salezone</h2>
+            <p>Field sales CRM for territory mapping, performance tracking, and lead discovery with real-time productivity insights.<br><br><a href="https://www.salezone.ie/" target="_blank" style="color:#62D84E;">salezone.ie</a></p>
+            <a href="https://github.com/DJN2122/Salezone" target="_blank"><button class="card-btn">GitHub Repo <i class="fab fa-github"></i></button></a>
+        </div>
+
+    </div>
+
+    <h3 class="sub-heading" style="margin-top:2.5rem;">A few of my favourite places</h3>
+
+    <div class="slideshow-container">
+        <div class="slide fade"><img src="./images/giantscauseway.jpeg" alt="Giant's Causeway, Ireland"></div>
+        <div class="slide fade"><img src="./images/lakebled.jpeg" alt="Lake Bled, Slovenia"></div>
+        <div class="slide fade"><img src="./images/mountrom.jpeg" alt="Vârful Toaca, Romania"></div>
+        <div class="slide fade"><img src="./images/milan.jpeg" alt="Milan, Italy"></div>
+        <div class="slide fade"><img src="./images/frankfurt.jpeg" alt="Frankfurt, Germany"></div>
+        <div class="slide fade"><img src="./images/NYC.jpeg" alt="New York City, USA"></div>
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </div>
+
+    <div class="slideshow-dots" style="text-align:center; margin-top:1.2rem;">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+
+    <h1 class="heading"><span>Contact</span> Me</h1>
+
+    <div class="row">
+        <div class="content">
+            <h3 class="title">Get in Touch</h3>
+            <div class="info">
+                <h3><i class="fab fa-github"></i> <a href="https://github.com/DJN2122" target="_blank">github.com/DJN2122</a></h3>
+                <h3><i class="fab fa-linkedin-in"></i> <a href="https://www.linkedin.com/in/david-n-308a9a134/" target="_blank">linkedin.com/in/david-n</a></h3>
+                <h3><i class="fas fa-envelope"></i> david_niculita@yahoo.com</h3>
+                <h3><i class="fas fa-map-marker-alt"></i> Dublin, Ireland</h3>
+            </div>
+        </div>
+    </div>
+
+    <p class="sub-heading" style="padding-top:1.5rem; opacity:0.5; font-size:1.3rem;">
+        &copy; 2026 David Niculita - ServiceNow Developer
+    </p>
+
+</section>
+
+<a class="gotopbtn" href="#welcome"><i class="fas fa-chevron-circle-up"></i></a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="script.js"></script>
+
+</body>
 </html>
