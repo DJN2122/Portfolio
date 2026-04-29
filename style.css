@@ -736,6 +736,68 @@ header .navbar ul li a:hover {
 }
 
 /* ===========================
+   MICRO-CERT CAROUSEL
+   =========================== */
+.micro-carousel-wrapper {
+    position: relative;
+    max-width: 26rem;
+    margin: 2rem auto 0;
+}
+
+.micro-carousel {
+    padding: 0 3.2rem;
+}
+
+.micro-slide {
+    display: none;
+    justify-content: center;
+    animation: fadeEffect 0.7s ease;
+}
+
+.micro-slide.active-micro {
+    display: flex;
+}
+
+.micro-prev-btn,
+.micro-next-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0.75rem 1rem;
+    color: #ffffff;
+    font-size: 1.6rem;
+    background: rgba(3,45,66,0.7);
+    user-select: none;
+    border-radius: var(--radius);
+    transition: background var(--transition), color var(--transition);
+    z-index: 10;
+}
+
+.micro-prev-btn { left: 0; }
+.micro-next-btn { right: 0; }
+.micro-prev-btn:hover,
+.micro-next-btn:hover { background: var(--accent); color: var(--primary); }
+
+.micro-dots-row {
+    text-align: center;
+    margin-top: 1.2rem;
+}
+
+.micro-dot {
+    height: 0.8rem;
+    width: 0.8rem;
+    margin: 0 0.3rem;
+    background-color: rgba(255,255,255,0.28);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.35s ease;
+    cursor: pointer;
+}
+
+.micro-dot.active { background-color: var(--accent); }
+
+/* ===========================
    PORTFOLIO SECTION
    =========================== */
 .project-container {
@@ -1024,8 +1086,8 @@ header .navbar ul li a:hover {
     .project-card p { font-size: 1.45rem; }
 
     .cert-card.cert-featured { width: 100%; max-width: 34rem; }
-    .cert-card.micro { width: calc(50% - 0.7rem); min-width: 14rem; }
-    .cert-grid { gap: 1rem; }
+    .micro-carousel-wrapper { max-width: 100%; }
+    .micro-carousel { padding: 0 2.8rem; }
     .cert-name { font-size: 1.55rem; }
     .cert-title { font-size: 2.1rem; }
     .cert-date { font-size: 1.3rem; }
@@ -1075,7 +1137,7 @@ header .navbar ul li a:hover {
     .tl-desc { font-size: 1.55rem; }
     .tl-org { font-size: 1.45rem; }
 
-    .cert-card.micro { width: 100%; }
+    .micro-carousel .cert-card.micro { width: 100%; }
     .cert-card.cert-featured { width: 100%; }
     .cert-name { font-size: 1.6rem; }
     .cert-date { font-size: 1.35rem; }

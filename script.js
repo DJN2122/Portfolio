@@ -66,3 +66,42 @@ for (var i = 0; i < dots.length; i++) {
 setInterval(function () {
     showSlides(slideIndex += 1);
 }, 5000);
+
+// Micro-Certification Carousel
+var microIndex = 0;
+var microSlides = document.getElementsByClassName('micro-slide');
+var microDots = document.getElementsByClassName('micro-dot');
+
+function showMicroSlide(n) {
+    if (microSlides.length === 0) return;
+    if (n >= microSlides.length) microIndex = 0;
+    if (n < 0) microIndex = microSlides.length - 1;
+    for (var i = 0; i < microSlides.length; i++) {
+        microSlides[i].classList.remove('active-micro');
+    }
+    for (var i = 0; i < microDots.length; i++) {
+        microDots[i].classList.remove('active');
+    }
+    microSlides[microIndex].classList.add('active-micro');
+    if (microDots[microIndex]) microDots[microIndex].classList.add('active');
+}
+
+showMicroSlide(microIndex);
+
+document.querySelector('.micro-next-btn') && document.querySelector('.micro-next-btn').addEventListener('click', function () {
+    showMicroSlide(++microIndex);
+});
+
+document.querySelector('.micro-prev-btn') && document.querySelector('.micro-prev-btn').addEventListener('click', function () {
+    showMicroSlide(--microIndex);
+});
+
+for (var i = 0; i < microDots.length; i++) {
+    microDots[i].addEventListener('click', (function (idx) {
+        return function () { showMicroSlide(microIndex = idx); };
+    })(i));
+}
+
+setInterval(function () {
+    showMicroSlide(++microIndex);
+}, 4000);
