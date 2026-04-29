@@ -246,10 +246,151 @@ header .navbar ul li a:hover {
     justify-content: center;
     flex-direction: column;
     padding: 0 8rem 0 5rem;
+    position: relative;
+    overflow: hidden;
+    background-image: radial-gradient(circle, rgba(255,255,255,0.038) 1px, transparent 1px);
+    background-size: 3.5rem 3.5rem;
+}
+
+/* Hero orbs */
+.hero-orb {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    filter: blur(7rem);
+    z-index: 0;
+}
+
+.orb-1 {
+    width: 65rem;
+    height: 65rem;
+    background: radial-gradient(circle, rgba(98,216,78,0.11) 0%, transparent 65%);
+    top: -22rem;
+    right: -14rem;
+    animation: floatOrb 14s ease-in-out infinite alternate;
+}
+
+.orb-2 {
+    width: 50rem;
+    height: 50rem;
+    background: radial-gradient(circle, rgba(21,77,69,0.6) 0%, transparent 65%);
+    bottom: -18rem;
+    left: -14rem;
+    animation: floatOrb 11s ease-in-out infinite alternate-reverse;
+}
+
+.orb-3 {
+    width: 32rem;
+    height: 32rem;
+    background: radial-gradient(circle, rgba(98,216,78,0.06) 0%, transparent 65%);
+    top: 38%;
+    left: 18%;
+    animation: floatOrb 9s ease-in-out infinite alternate;
+    animation-delay: -5s;
+}
+
+@keyframes floatOrb {
+    from { transform: translate(0, 0) scale(1); }
+    to   { transform: translate(5rem, -5rem) scale(1.1); }
+}
+
+/* Hero content wrapper (sits above orbs) */
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Hero certified badge */
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.6rem 1.6rem;
+    background: rgba(98,216,78,0.1);
+    border: 1px solid rgba(98,216,78,0.32);
+    border-radius: 5rem;
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: var(--accent);
+    letter-spacing: 0.03em;
+    margin-bottom: 1.6rem;
+    width: fit-content;
+    animation: pulseBadge 3.5s ease-in-out infinite;
+}
+
+.hero-badge i { font-size: 1.15rem; }
+
+@keyframes pulseBadge {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(98,216,78,0); }
+    50%       { box-shadow: 0 0 0 0.7rem rgba(98,216,78,0.07); }
+}
+
+/* Hero tech tags */
+.hero-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.85rem;
+    margin: 1.8rem 0 0.2rem;
+}
+
+.hero-tags span {
+    padding: 0.45rem 1.3rem;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--text-dim);
+    letter-spacing: 0.02em;
+    transition: border-color var(--transition), color var(--transition), background var(--transition);
+}
+
+.hero-tags span:hover {
+    border-color: rgba(98,216,78,0.4);
+    color: var(--accent);
+    background: rgba(98,216,78,0.07);
+}
+
+/* Scroll indicator */
+.hero-scroll-indicator {
+    position: absolute;
+    bottom: 2.8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.38;
+    animation: scrollBounce 2.5s ease-in-out infinite;
+    z-index: 1;
+}
+
+.hero-scroll-indicator span {
+    display: block;
+    width: 2px;
+    height: 4rem;
+    background: linear-gradient(to bottom, transparent, var(--accent));
+    border-radius: 1px;
+}
+
+.hero-scroll-indicator::after {
+    content: '';
+    display: block;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-right: 2px solid var(--accent);
+    border-bottom: 2px solid var(--accent);
+    transform: rotate(45deg);
+    margin-top: -0.6rem;
+}
+
+@keyframes scrollBounce {
+    0%, 100% { transform: translateX(-50%) translateY(0);    opacity: 0.38; }
+    50%       { transform: translateX(-50%) translateY(1rem); opacity: 0.65; }
 }
 
 .welcome-eyebrow {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     font-weight: 600;
     letter-spacing: 0.1em;
     color: var(--accent);
@@ -257,27 +398,27 @@ header .navbar ul li a:hover {
 }
 
 .welcome h1 {
-    font-size: 5rem;
+    font-size: 5.5rem;
     font-weight: 800;
     color: #ffffff;
-    line-height: 1.12;
+    line-height: 1.1;
     letter-spacing: -0.02em;
 }
 
 .welcome h1 span { color: var(--accent); }
 
 .welcome-role {
-    font-size: 1.75rem;
+    font-size: 1.9rem;
     font-weight: 500;
     color: var(--text-muted);
     margin-top: 0.8rem;
 }
 
 .welcome-body {
-    font-size: 1.6rem;
+    font-size: 1.65rem;
     color: var(--text-muted);
     max-width: 60rem;
-    line-height: 1.75;
+    line-height: 1.8;
     margin-top: 0.8rem;
 }
 
@@ -285,7 +426,7 @@ header .navbar ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 1.2rem;
-    margin-top: 0.3rem;
+    margin-top: 1rem;
 }
 
 /* ===========================
@@ -826,7 +967,7 @@ header .navbar ul li a:hover {
    RESPONSIVE — 1200px
    =========================== */
 @media (max-width: 1200px) {
-    html { font-size: 57%; }
+    html { font-size: 58%; }
     .welcome { padding: 0 5rem 0 3.5rem; }
 }
 
@@ -846,44 +987,65 @@ header .navbar ul li a:hover {
     body { padding: 0; }
     .welcome { padding: 8rem 3rem 3rem; }
     .about .row .info { padding-left: 1.5rem; }
+    .hero-scroll-indicator { display: none; }
 }
 
 /* ===========================
    RESPONSIVE — 768px
    =========================== */
 @media (max-width: 768px) {
-    html { font-size: 52%; }
+    html { font-size: 60%; }
 
     section { padding: 3.5rem 1.8rem; }
 
     .welcome { padding: 8rem 2rem 3rem; }
-    .welcome h1 { font-size: 4rem; }
+    .welcome h1 { font-size: 4.4rem; }
+    .welcome-role { font-size: 1.9rem; }
+    .welcome-body { font-size: 1.7rem; }
+
+    .orb-1 { width: 40rem; height: 40rem; right: -10rem; top: -12rem; }
+    .orb-2 { width: 32rem; height: 32rem; left: -8rem; bottom: -10rem; }
+    .orb-3 { display: none; }
 
     .about-description { margin: 1.4rem auto 1.8rem; }
+    .about-description p { font-size: 1.7rem; }
     .about .row .info { padding: 0.5rem 1rem; }
+    .about .row .info h3 { font-size: 1.7rem; }
     .about .row .counter .box { width: calc(50% - 0.6rem); }
+    .about .row .counter .box h3 { font-size: 1.55rem; }
 
     .timeline { padding: 0 0.5rem; }
+    .tl-body h3 { font-size: 1.8rem; }
+    .tl-desc { font-size: 1.5rem; }
+    .tl-org { font-size: 1.4rem; }
 
     .project-card { width: calc(50% - 0.9rem); }
+    .project-card h2 { font-size: 1.75rem; }
+    .project-card p { font-size: 1.45rem; }
 
     .cert-card.cert-featured { width: 100%; max-width: 34rem; }
     .cert-card.micro { width: calc(50% - 0.7rem); min-width: 14rem; }
     .cert-grid { gap: 1rem; }
+    .cert-name { font-size: 1.55rem; }
+    .cert-title { font-size: 2.1rem; }
+    .cert-date { font-size: 1.3rem; }
+
+    .sub-heading { font-size: 1.7rem; }
 
     .slideshow-container { margin: 1.5rem 0; }
     .slide img { height: 23rem; }
 
     .contact .row .content { padding: 1.5rem 2rem; }
+    .contact .row .content .info h3 { font-size: 1.7rem; }
 }
 
 /* ===========================
    RESPONSIVE — 600px
    =========================== */
 @media (max-width: 600px) {
-    html { font-size: 50%; }
+    html { font-size: 60%; }
 
-    .welcome h1 { font-size: 3.6rem; }
+    .welcome h1 { font-size: 4rem; }
     .about .row .counter .box { width: calc(50% - 0.6rem); }
     .project-card { width: 100%; }
     .slide img { height: 20rem; }
@@ -893,29 +1055,41 @@ header .navbar ul li a:hover {
    RESPONSIVE — 480px
    =========================== */
 @media (max-width: 480px) {
-    html { font-size: 47%; }
+    html { font-size: 62%; }
 
     header { width: 100vw; }
 
-    .heading { font-size: 2.8rem; margin: 0 0.5rem; }
+    .heading { font-size: 3rem; margin: 0 0.5rem; }
+    .sub-heading { font-size: 1.7rem; }
 
-    .welcome { padding: 7rem 1.6rem 2.5rem; }
-    .welcome h1 { font-size: 3.2rem; }
+    .welcome { padding: 7rem 1.8rem 3rem; }
+    .welcome h1 { font-size: 3.8rem; }
+    .welcome-role { font-size: 1.85rem; }
+    .welcome-body { font-size: 1.7rem; }
     .welcome-actions { flex-direction: column; align-items: flex-start; }
+    .hero-badge { font-size: 1.35rem; }
+    .hero-tags span { font-size: 1.35rem; }
 
     .about .row .counter .box { width: 100%; }
+    .tl-body h3 { font-size: 1.85rem; }
+    .tl-desc { font-size: 1.55rem; }
+    .tl-org { font-size: 1.45rem; }
 
     .cert-card.micro { width: 100%; }
     .cert-card.cert-featured { width: 100%; }
+    .cert-name { font-size: 1.6rem; }
+    .cert-date { font-size: 1.35rem; }
 
     .contact .row .content { padding: 1.5rem; }
+    .contact .row .content .info h3 { font-size: 1.75rem; }
 }
 
 /* ===========================
    RESPONSIVE — 360px
    =========================== */
 @media (max-width: 360px) {
-    html { font-size: 43%; }
-    .welcome h1 { font-size: 3rem; }
-    .heading { font-size: 2.6rem; }
+    html { font-size: 60%; }
+    .welcome h1 { font-size: 3.5rem; }
+    .heading { font-size: 2.9rem; }
+    .welcome-body { font-size: 1.65rem; }
 }
